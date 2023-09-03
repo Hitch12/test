@@ -16,7 +16,10 @@
 .bgMainColor{
   background: #01B671;
 }
-
+.navbar{
+  width: 100%;
+  overflow: hidden;
+}
 .nav-link{
   color: #01B671;
   font-family: 'Roboto', sans-serif ;
@@ -259,14 +262,14 @@
     padding: 15px 15px;
   }
   .navbar-nav{
-    background: #eeeff3;
+    background: #4a4a4a;
     border-radius: 8px;
     border: solid 1px #01B671;
     margin-top: 15px;
   }
   .search{
-display: none;
-    }
+    display: none;
+  }
 
 
 
@@ -276,17 +279,23 @@ display: none;
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+  .search{
+    display: none;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+  .search{
+    display: none;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+  .search{
+    display: block;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
