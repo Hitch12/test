@@ -1,0 +1,99 @@
+:root{
+  --mainColor: #01B671;
+  --secColor: #FFB128;
+  --bgColor: #EEEFF3;
+}
+.mainColorText{
+  color: #01B671;
+}
+.secColorText{
+  color: #FFB128;
+}
+.bgColor{
+  background: #EEEFF3;
+}
+.bgMainColor{
+  background: #01B671;
+}
+.bgSecColor{
+  background: #FFB128 !important;
+}
+
+.Courses{
+  width: 100%;
+  position: relative;
+  background-color: #eeeff3d2;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 70vh;
+}
+.Courses::after{
+  content: '';
+  background: url(../../assets/pattern_memphis-1_1_2_0-0_0_1__edeef2_0075fa_fe625d_01b771_ffb029.png);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -999;
+  // opacity: 0.5;
+}
+.course-card{
+  border-radius: 8px;
+  overflow: hidden;
+  background: #EEEFF3;
+
+}
+.card-img{
+  position: relative;
+}
+.play{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #00000067;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  border: #01B671 solid 1.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #01B671;
+  font-size: 28px;
+  z-index: 9;
+}
+.card-img::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00000067;
+}
+.card-info{
+  padding: 10px;
+  h4{font-size: 16px;}
+}
+
+.card-footer{
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px 12px;
+  border-bottom: #01B671 solid 3px;
+}
+.button-a{
+  width: 25%;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .button-a{
+    width: 50%;
+  }
+
+}

@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container position-relative">
+    <a class="navbar-brand">
+      <img src="../../assets/main_logo.webp" alt="main logo" width="80" >
+    </a>
+
+    <button class="navbar-toggler ms-auto border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars shadow-lg " style="color: #FFB128;"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Contact Us</a>
+        </li>
+      </ul>
+
+
+
+
+    </div>
+    <form class="search ">
+      <input type="checkbox" id="toggleSearch" class="search__toggle" hidden />
+      <div class="search__field">
+        <label for="toggleSearch" class="search__label">
+          <!-- <span *ngIf="isClose" class="search__close"></span> -->
+        </label>
+        <input type="text" pTooltip="Click on the magnifying to search" tooltipPosition="bottom" class="search__input" placeholder="What are you looking for?" />
+        <label for="toggleSearch" class="search__label">
+          <div class="search__button">
+            <div class="search__icon search__button--toggle"></div>
+          </div>
+          <button class="search__button search__button--submit">
+            <div class="search__icon"></div>
+          </button>
+        </label>
+      </div>
+    </form>
+  </div>
+</nav>
